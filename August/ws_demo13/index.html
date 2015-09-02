@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta content="IE=edge,chrome=1" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="telephone=no" name="format-detection">
+    <title>无线苏州优惠券</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+<div class="coupon">
+    <header class="coupon-header">
+        <img src="img/header.png" alt="优惠券">
+
+        <div class="rules">优惠券使用规则</div>
+    </header>
+    <section class="coupon-body">
+        <!--<textarea class="area-datalazyload">-->
+
+        <!--</textarea>-->
+        <!--<img img-lazyload="images/p1.jpg" src="images/wait_load.jpg" />-->
+        <!--<img img-lazyload="images/p2.jpg" src="images/wait_load.jpg" />-->
+        <!--<img img-lazyload="images/p3.jpg" src="images/wait_load.jpg" />-->
+        <!--<img img-lazyload="images/p4.jpg" src="images/wait_load.jpg" />-->
+        <!--<img img-lazyload="images/p5.jpg" src="images/wait_load.jpg" />-->
+        <!--<img img-lazyload="images/p6.jpg" src="images/wait_load.jpg" />-->
+        <!--<img img-lazyload="images/p7.jpg" src="images/wait_load.jpg" />-->
+        <!--<img img-lazyload="images/p8.jpg" src="images/wait_load.jpg" />-->
+        <!--<img img-lazyload="images/p9.jpg" src="images/wait_load.jpg" />-->
+        <!--<img img-lazyload="images/p10.jpg" src="images/wait_load.jpg" />-->
+        <!--<div class="item">-->
+            <!--<div class="content clearfix">-->
+                <!--<div class="fl clearfix">-->
+                    <!--<div class="logo"><img src="img/logo.png" alt="优惠券"></div>-->
+                    <!--<div class="info">-->
+                        <!--<p class="title"><strong>星巴克</strong>(28店通用)</p>-->
+
+                        <!--<p class="discount"><strong>8.8</strong> 折</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="fr">-->
+                    <!--<div class="js-coupon get-coupon">点击领取</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="time-out">有效期：2015.08.01 - 2015.10.30</div>-->
+        <!--</div>-->
+        <!--<div class="item">-->
+            <!--<div class="content clearfix">-->
+                <!--<div class="fl clearfix">-->
+                    <!--<div class="logo"><img src="img/logo.png" alt="优惠券"></div>-->
+                    <!--<div class="info">-->
+                        <!--<p class="title"><strong>星巴克</strong>(28店通用)</p>-->
+
+                        <!--<p class="discount"><strong>8.8</strong> 折</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="fr">-->
+                    <!--<div class="js-coupon get-coupon">点击领取</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="time-out">有效期：2015.08.01 - 2015.10.30</div>-->
+        <!--</div>-->
+        <div class="list">
+
+        </div>
+    </section>
+</div>
+
+<!-- 模态框1(优惠券使用规则) -->
+<div class="modal fade coupon-modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="dateModalLabel">无线苏州合作商家优惠券使用规则如下：</h4>
+            </div>
+            <div class="modal-body">
+                <dl>
+                    <dt><em></em>可用时间:</dt>
+                    <dd>法定节假日当天不可使用</dd>
+                    <dd>营业时间内全天都可使用</dd>
+                </dl>
+                <dl>
+                    <dt><em class="dt2"></em>预约提示:</dt>
+                    <dd>无需预约，直接消费（高峰期间消费需排号等位）</dd>
+                </dl>
+                <dl>
+                    <dt><em class="dt3"></em>使用规则:</dt>
+                    <dd>本活动不可与其他店内优惠活动或者团购同时享用。每张券不限使用人数。</dd>
+                </dl>
+                <dl>
+                    <dt><em class="dt4"></em>温馨提示:</dt>
+                    <dd>如需发票，请在消费前向商户咨询。</dd>
+                </dl>
+                <p>优惠券使用最终解释权归商家所有，如有疑问可店询，谢谢！</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 模态框2（领取优惠券） -->
+<div class="modal fade coupon-modal2" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="dateModalLabel2"><span>星巴克</span>优惠券领取</h4>
+            </div>
+            <div class="modal-body">
+                <div class="group">
+                    <input name="mobile" type="text" placeholder="请输入您的手机号码"/>
+                </div>
+                <div class="group">
+                    <input class="code" name="code" type="text" placeholder="请输入验证码"/>
+                    <button class="js-code get-code">获取验证码</button>
+                </div>
+                <button class="submit">立即领取</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/DataLazyLoad.min.js"></script>
+<script src="js/datalazyload.min2.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

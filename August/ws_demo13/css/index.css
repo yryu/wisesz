@@ -1,0 +1,323 @@
+body {
+    font-family: "Microsoft YaHei";
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-appearance: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/****************************** index.html(优惠券) *****************************************/
+
+.coupon {
+    margin: 0 auto;
+    max-width: 640px;
+    min-width: 320px;
+    min-height: 504px;
+    width: 100%;
+    height: auto;
+}
+
+.coupon img {
+    display: block;
+}
+
+.coupon-header {
+    position: relative;
+}
+
+.coupon-header .rules {
+    width: 46%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fec748;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 24%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #dc1539;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 1px;
+    box-shadow: 3px 3px 3px #bf0023;
+    cursor: pointer;
+}
+
+.coupon-body {
+    padding: 15px;
+}
+
+.item {
+    background-color: #fffedf;
+    margin: 0 0 15px;
+    border-radius: 10px;
+}
+
+.item .content .fl {
+    width: 72%;
+    padding: 10px 5px 5px 10px;
+    border-right: #fec748 1px dashed;
+}
+
+.item .content .fr {
+    width: 28%;
+}
+
+.item-end {
+    background-color: #fffedf;
+    margin: 0 0 10px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 0;
+    color: #8c6917;
+    letter-spacing: 1px;
+}
+
+.fl .logo {
+    float: left;
+    width: 34%;
+}
+
+.fl .info {
+    float: right;
+    width: 62%;
+    padding: 3px 0 0;
+}
+
+.fl .info .title strong {
+    font-size: 15px;
+}
+
+.fl .info .discount {
+    font-size: 15px;
+    color: #ff9000;
+    line-height: 1.5;
+}
+
+.fl .info .discount strong {
+    font-size: 30px;
+}
+
+.item .content .fr .get-coupon {
+    background-color: #e5173d;
+    width: 80%;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    margin: 30% auto 0;
+    cursor: pointer;
+}
+
+.item .content .fr .get-coupon-disabled {
+    background-color: #c9c9c9;
+    width: 80%;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    margin: 30% auto 0;
+    cursor: pointer;
+}
+
+.item .time-out {
+    padding: 4px 10px;
+    background-color: #ffecbf;
+    border-radius: 0 0 10px 10px;
+    color: #8c6917;
+}
+
+/****************************** modal(优惠券使用规则) *****************************************/
+
+.coupon-modal .modal-header {
+    position: relative;
+    background-color: #dc1439;
+    color: #ffffff;
+}
+
+.coupon-modal .close {
+    font-size: 42px;
+    margin: 0;
+    float: none;
+    position: absolute;
+    top: 0;
+    right: 8px;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.coupon-modal .modal-title {
+    padding: 0 27px;
+    text-align: center;
+}
+
+.coupon-modal .modal-body dl {
+    padding: 0 0 0 18px;
+    position: relative;
+}
+
+.coupon-modal .modal-body dl dt, .coupon-modal .modal-body dl dd {
+    line-height: 1.8;
+}
+
+.coupon-modal .modal-body dl dt em {
+    background-image: url(../img/dt1.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 12px;
+    height: 13px;
+    position: absolute;
+    top: 3px;
+    left: 0;
+}
+
+.coupon-modal .modal-body dl dt em.dt2 {
+    background-image: url(../img/dt2.png);
+    width: 12px;
+    height: 12px;
+    top: 4px;
+}
+
+.coupon-modal .modal-body dl dt em.dt3 {
+    background-image: url(../img/dt3.png);
+    width: 9px;
+    height: 12px;
+}
+
+.coupon-modal .modal-body dl dt em.dt4 {
+    background-image: url(../img/dt4.png);
+    width: 10px;
+    height: 12px;
+}
+
+.coupon-modal .modal-body dl dd {
+    text-align: justify;
+}
+
+.coupon-modal .modal-body p {
+    margin: 10px 0 0;
+    color: #cf9c00;
+}
+
+/****************************** modal(领取优惠券) *****************************************/
+
+.coupon-modal2 .modal-header {
+    position: relative;
+    background-color: #dc1439;
+    color: #ffffff;
+}
+
+.coupon-modal2 .close {
+    font-size: 42px;
+    margin: 0;
+    float: none;
+    position: absolute;
+    top: 0;
+    right: 8px;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.coupon-modal2 .modal-title {
+    padding: 0 27px;
+    text-align: center;
+}
+
+.coupon-modal2 .modal-body {
+    padding: 30px 15px;
+}
+
+.coupon-modal2 .modal-body .group {
+    margin: 0 0 10px;
+    border: #cecece 1px solid;
+    border-radius: 4px;
+    height: 44px;
+    background-color: #fff;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.coupon-modal2 .modal-body .group input {
+    border: none;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    color: #666;
+    font-size: 14px;
+}
+
+.coupon-modal2 .modal-body .group input.code {
+    padding: 0 80px 0 0;
+}
+
+.coupon-modal2 .modal-body .group .get-code {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    width: 80px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    background-color: #ff9000;
+    color: #fff;
+    font-size: 14px;
+}
+
+.coupon-modal2 .modal-body .group .get-code-disabled {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    width: 80px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    background-color: #C9C9C9;
+    color: #fff;
+    font-size: 14px;
+}
+
+.coupon-modal2 .modal-body .submit {
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #ff9000;
+    color: #ffffff;
+    border-radius: 4px;
+    border: none;
+    letter-spacing: 1px;
+    margin: 10px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

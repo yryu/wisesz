@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <!-- 启用webApp -->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <title>红楼梦音乐传奇购买页</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="show show-buy">
+    <div class="show-buy-header">
+        <img src="img/header.png" alt="红楼梦音乐传奇"/>
+    </div>
+    <div class="show-buy-body">
+        <div class="group clearfix">
+            <label class="group-lbl">时间</label>
+
+            <div class="group-control show-buy-time">
+                <ul class="clearfix">
+                    <li class="active"><em>8月21日</em>(周日)  19:30</li>
+                </ul>
+            </div>
+        </div>
+        <div class="group pd15 clearfix">
+            <label class="group-lbl">票价</label>
+
+            <div class="group-control show-buy-package">
+                <ul class="clearfix">
+                    <li class="active"><em>80</em>元/张</li>
+                    <li><em>180</em>元/张</li>
+                    <li><em>280</em>元/张</li>
+                    <li><em>380</em>元/张</li>
+                    <li><em>480</em>元/张</li>
+                    <li><em>580</em>元/张</li>
+                    <li><em>680</em>元/张</li>
+                </ul>
+            </div>
+        </div>
+        <div class="group clearfix">
+            <label class="group-lbl">数量</label>
+
+            <div class="group-control show-buy-number clearfix">
+                <ul>
+                    <li class="minus"><span class="glyphicon glyphicon-minus"></span></li>
+                    <li class="num">1</li>
+                    <li class="plus"><span class="glyphicon glyphicon-plus"></span></li>
+                </ul>
+                <div class="total-price">总价:&nbsp;&yen<label id="total"></label></div>
+            </div>
+        </div>
+    </div>
+    <div class="show-buy-footer">
+        <form>
+            <div class="ipt-group">
+                <label for="inputName">姓名 :</label>
+                <input class="ipt-control" id="inputName" type="text">
+            </div>
+            <div class="ipt-group">
+                <label for="inputMobile">电话 :</label>
+                <input class="ipt-control" id="inputMobile" type="text">
+            </div>
+            <div class="ipt-group ipt-group-radio">
+                <input type="radio" id="radio1" name="address" checked value="0"/><label
+                    for="radio1">邮寄(快递费7元)</label>
+                <input style="margin-left: 20px;" type="radio" id="radio2" name="address" value="1"/><label
+                    for="radio2">自取</label>
+            </div>
+            <div class="area"><textarea placeholder="请输入邮寄地址..."></textarea></div>
+            <div class="tips">自取地址：苏州市国际科技园四期11楼1102室</div>
+            <div class="submit"><a class="submit-buy" href="javascript:void(0)">提交订单</a></div>
+        </form>
+    </div>
+    <div class="show-buy-footer2">
+        <p class="tips">购票须知：</p>
+        <p>1、实行一人一票制，1.1米以下儿童谢绝入场，1.1米以上儿童照章购票。</p>
+        <p>2、请着装整洁，按序入场；</p>
+        <p>3、请勿将食品、饮料、口香糖等带入场内；</p>
+        <p>4、儿童专场，对儿童身高不设限制。所有观众凭票入场；</p>
+        <p>5、准时入场，请对号入座；迟到的观众，请在剧院外等候，待幕间休息安静入场；</p>
+        <p>6、演出期间，请关闭手持电话，并保持场内安静；</p>
+        <p>7、剧院内未经许可，严禁拍照、摄像、录音；</p>
+        <p>8、剧院内禁止吸烟;</p>
+        <p>9、请谨慎选票，一经售出，概不退换。</p>
+        <p>10、无线苏州售票客服电话：0512--69152753</p>
+    </div>
+</div>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
