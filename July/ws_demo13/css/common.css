@@ -1,0 +1,90 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    background: #F7F7F7;
+    font-family: tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif, Helvetica;
+    font-weight: normal;
+    line-height: 1.6;
+    color: #333333;
+    font-size: 12px;
+    -webkit-text-size-adjust: 100%;
+}
+
+ul, ol {
+    list-style: outside none none;
+}
+
+a, a:link, a:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    cursor: pointer;
+}
+
+a:focus {
+    outline: medium none;
+}
+
+input, textarea {
+    outline: medium none;
+}
+
+fieldset, img {
+    border: 0 none;
+}
+
+img {
+    max-width: 100%;
+}
+
+button, input, select, textarea {
+    font-size: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clearfix {
+}
+
+.clearfix::before, .clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+address, cite, dfn, em, var {
+    font-style: normal;
+}
+
+em, i {
+    display: inline-block;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.ofh {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+

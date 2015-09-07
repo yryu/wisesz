@@ -1,0 +1,420 @@
+body {
+    font-family: "Microsoft YaHei";
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-appearance: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/****************************** index.html(《小飞侠彼得潘》、《樱桃小丸子》儿童剧首页) *****************************************/
+
+.show {
+    margin: 0 auto;
+    max-width: 640px;
+    min-width: 320px;
+    min-height: 504px;
+    width: 100%;
+    height: auto;
+    background-color: #fce346;
+    color: #285250;
+}
+
+.show img {
+    disshow: block;
+}
+
+.show .show-submit {
+    display: block;
+    background-color: #e20b20;
+    color: #fff;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 0 0;
+    letter-spacing: 1px;
+}
+
+.show-header .content, .show-body .content {
+    padding: 15px;
+}
+
+.show-header .content p, .show-body .content p {
+    line-height: 1.8;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+.show-modal .modal-header {
+    border-bottom: none;
+}
+
+.show-modal .modal-header .close {
+    font-size: 36px;
+    position: relative;
+    right: -2px;
+    top: -2px;
+}
+
+.show-modal .dialog .dialog-header {
+    font-size: 14px;
+}
+
+.show-modal .dialog .dialog-content .dialog-group {
+    margin-top: 10px;
+}
+
+.show-modal .dialog .dialog-content .dialog-group .lbl {
+    float: left;
+    width: 20%;
+    margin: 0;
+    height: 34px;
+    line-height: 34px;
+}
+
+.show-modal .dialog .dialog-content .dialog-group .form-control {
+    float: left;
+    width: 80%;
+}
+
+/****************************** buy.html(《小飞侠彼得潘》、《樱桃小丸子》儿童剧购买页) *****************************************/
+.order-btn {
+    position: fixed;
+    top: 170px;
+    right: 0;
+    background-image: url(../img/order.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 102px;
+    height: 45px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.show-buy {
+    margin: 0 auto;
+    max-width: 640px;
+    min-width: 320px;
+    min-height: 504px;
+    width: 100%;
+    height: auto;
+    background-color: #4d3215;
+}
+
+.show-buy img {
+    display: block;
+}
+
+.show-buy-header .info {
+    padding: 15px 15px 5px;
+}
+
+.show-buy-header .info p {
+    color: #fff;
+    line-height: 1.8;
+    letter-spacing: 1px;
+}
+
+.show-buy-body {
+    padding: 15px;
+}
+
+.show-buy-body .group.pd15 {
+    padding: 15px 0;
+}
+
+.show-buy-body .group .group-lbl {
+    float: left;
+    width: 13%;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+}
+
+.show-buy-body .group .group-control {
+    float: left;
+    width: 87%;
+}
+
+.show-buy-body .group .group-control.show-buy-package ul li, .show-buy-body .group .group-control.show-buy-time ul li {
+    float: left;
+    width: 80px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    margin: 0 0 5px 5px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.show-buy-body .group .group-control.show-buy-package ul li:nth-child(3n+1), .show-buy-body .group .group-control.show-buy-time ul li:nth-child(3n+1) {
+    margin: 0 0 5px 0;
+}
+
+.show-buy-body .group .group-control.show-buy-package ul li.active, .show-buy-body .group .group-control.show-buy-time ul li.active {
+    background-color: #e20b20;
+    color: #fff;
+}
+
+.show-buy-body .group .group-control.show-buy-number ul li.minus, .show-buy-body .group .group-control.show-buy-number ul li.plus {
+    float: left;
+    border: #b4b4b4 1px solid;
+    background-color: #dcdcdc;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.show-buy-body .group .group-control.show-buy-number ul li.num {
+    float: left;
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    border-top: #b4b4b4 1px solid;
+    border-bottom: #b4b4b4 1px solid;
+    text-align: center;
+    background-color: #fff;
+}
+
+.show-buy-body .group .group-control.show-buy-number ul {
+    float: left;
+}
+
+.show-buy-body .group .group-control.show-buy-number ul li span {
+    color: #797979;
+}
+
+.show-buy-body .group .group-control.show-buy-number .total-price {
+    float: right;
+    color: #ff3737;
+    height: 40px;
+    line-height: 38px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.show-buy-footer {
+    padding: 15px 15px 20px;
+}
+
+.show-buy-footer .ipt-group {
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    margin-bottom: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.show-buy-footer .ipt-group label {
+    font-weight: normal;
+}
+
+.show-buy-footer .ipt-group .ipt-control {
+    border: none;
+    background-color: #f0f0f0;
+    disshow: inline-block;
+    width: 84%;
+    padding: 0 5px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.show-buy-footer .ipt-group-radio label {
+    margin: 0 0 0 5px;
+    position: relative;
+    top: -1px;
+}
+
+.show-buy-footer .area {
+    background-color: #F0F0F0;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.show-buy-footer .address {
+    color: #ff3737;
+    margin-top: 10px;
+    font-weight: bold;
+    display: none;
+}
+
+.show-buy-footer .area textarea {
+    background: none;
+    border: none;
+    resize: none;
+    width: 100%;
+}
+
+.show-buy-footer .submit-buy {
+    display: block;
+    color: #fff;
+    background-color: #e20b20;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    padding: 12px 0;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+.show-buy-footer .tips {
+    color: #f7ef0e;
+    margin: 10px 0 0;
+    font-size: 14px;
+}
+
+.show-buy-footer .rules {
+    color: #fff;
+    margin: 15px 0 0;
+}
+
+.show-buy-footer .rules dl dt {
+    font-size: 14px;
+    line-height: 2;
+}
+
+.show-buy-footer .rules dl dd {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/****************************** buy2.html(《樱桃小丸子》儿童剧购买页) *****************************************/
+.show-buy2 {
+    background-color: #fce346;
+}
+
+.show-buy2 .show-buy-header .info p {
+    color: #333;
+}
+
+.show-buy2 .show-buy-header .info p span {
+    position: relative;
+    left: -999px;
+}
+
+.show-buy2 .show-buy-body .group .group-lbl {
+    color: #333;
+}
+
+.show-buy2 .show-buy-footer .ipt-group {
+    background-color: #fff;
+}
+
+.show-buy2 .show-buy-footer .ipt-group .ipt-control {
+    background-color: #fff;
+}
+
+.show-buy2 .show-buy-footer .area {
+    background-color: #fff;
+}
+
+.show-buy2 .show-buy-footer .tips {
+    color: maroon;
+}
+
+.show-buy2 .show-buy-footer .rules {
+    color: #666;
+}
+
+/****************************** order.html(订单查询) *****************************************/
+.show-order {
+    margin: 0 auto;
+    max-width: 640px;
+    min-width: 320px;
+    min-height: 504px;
+    width: 100%;
+    height: auto;
+    background-color: #f0f0f0;
+}
+
+.show-order .show-order-header {
+    background-color: #fff;
+    margin-bottom: 5px;
+    padding: 15px;
+}
+
+.show-order .show-order-header .show-order-contact {
+    font-size: 14px;
+}
+
+.show-order-contact .consignee {
+    float: left;
+}
+
+.show-order-contact .mobile {
+    float: right;
+}
+
+.show-order .show-order-header .show-order-time {
+    color: #adadad;
+    margin-top: 10px;
+}
+
+.show-order .show-order-body {
+    background-color: #fff;
+}
+
+.show-order .show-order-body .show-order-item {
+    padding: 15px;
+    border-bottom: #f0f0f0 1px solid;
+    color: #adadad;
+}
+
+.show-order-item .item-img {
+    float: left;
+    width: 20%;
+}
+
+.show-order-item .item-txt {
+    float: left;
+    width: 60%;
+    padding-left: 10px;
+}
+
+.show-order-item .item-txt .title {
+    color: #000;
+    font-size: 14px;
+}
+
+.show-order-item .item-txt .content {
+    text-align: justify;
+}
+
+.show-order-item .item-price {
+    float: left;
+    width: 20%;
+    text-align: right;
+}
+
+.show-order-item .item-price .price {
+    color: #ff4b04;
+}
+
+@media screen and (min-width: 360px) {
+    .show-buy-body .group .group-control.show-buy-package ul li, .show-buy-body .group .group-control.show-buy-time ul li {
+        width: 89px;
+        margin: 0 0 5px 10px;
+    }
+}
+
+@media screen and (min-width: 414px) {
+    .show-buy-body .group .group-control.show-buy-package ul li, .show-buy-body .group .group-control.show-buy-time ul li {
+        width: 100px;
+        margin: 0 0 5px 10px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .show-buy-body .group .group-control.show-buy-package ul li, .show-buy-body .group .group-control.show-buy-time ul li {
+        width: 110px;
+        margin: 0 0 5px 15px;
+    }
+}

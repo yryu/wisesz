@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <!-- 启用webApp -->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <title>仙居东魁特级杨梅首页</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="waxberry">
+    <a href="order.html" class="order-btn"></a>
+    <a class="waxberry-submit" href="javascript:void(0)">立即购买</a>
+
+    <div class="waxberry-header">
+        <img src="img/waxberry_header.png" alt="仙居东魁特级杨梅"/>
+    </div>
+    <div class="waxberry-body">
+        <img src="img/waxberry_body1.png" alt="仙居东魁特级杨梅"/>
+        <img src="img/waxberry_btn.png" alt="仙居东魁特级杨梅"/></a>
+        <img src="img/waxberry_body2.png" alt="仙居东魁特级杨梅"/>
+    </div>
+    <div class="waxberry-footer">
+        <img src="img/waxberry_footer.png" alt="仙居东魁特级杨梅"/>
+    </div>
+    <!-- 验证框1 -->
+    <div class="modal fade waxberry-modal01" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="dateModalLabel"></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="dialog">
+                        <div class="dialog-header">请输入你的手机号码查询订单：</div>
+                        <div class="dialog-content">
+                            <div class="dialog-group clearfix"><label class="lbl" for="modal-mobile">手机号:</label><input
+                                    class="form-control" type="text" id="modal-mobile"></div>
+                            <div class="dialog-group clearfix"><label class="lbl"></label>
+                                <button class="query-btn btn btn-default" type="button">查询</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 验证框2 -->
+    <div class="modal fade waxberry-modal02" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="dateModalLabel2">订单</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="dialog">
+                        <div class="dialog-group clearfix">
+                            <label>规格选择 :</label>
+                            <ul class="spec clearfix">
+                                <li class="active"><em>158</em>元 1.5kg</li>
+                                <li><em>268</em>元 3.0kg</li>
+                            </ul>
+                        </div>
+                        <div class="dialog-group waxberry-buy-number clearfix">
+                            <label>购买数量 :</label>
+                            <ul class="clearfix">
+                                <li class="minus"><span class="glyphicon glyphicon-minus"></span></li>
+                                <li class="num">1</li>
+                                <li class="plus"><span class="glyphicon glyphicon-plus"></span></li>
+                            </ul>
+                        </div>
+                        <div class="dialog-group clearfix">
+                            <label for="inputName">您的姓名 :</label>
+                            <input class="ipt-control" id="inputName" type="text">
+                        </div>
+                        <div class="dialog-group clearfix">
+                            <label for="inputMobile">手机号码 :</label>
+                            <input class="ipt-control" id="inputMobile" type="text">
+                        </div>
+                        <div class="dialog-group clearfix">
+                            <label for="inputAddress">收货地址 :</label>
+                            <ul class="address clearfix">
+                                <li class="active">江苏</li>
+                                <li>浙江</li>
+                                <li>上海</li>
+                            </ul>
+                        </div>
+                        <div class="dialog-group area"><textarea id="inputAddress" placeholder="请输入收货地址..."></textarea></div>
+                        <div class="submit"><a class="submit-buy" href="javascript:void(0)">提交订单</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

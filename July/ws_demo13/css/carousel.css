@@ -1,0 +1,50 @@
+.carousel-image {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-image div {
+    position: absolute;
+}
+
+.carousel-image a {
+    display: block;
+    float: left;
+    background-color: #fff;
+}
+
+.carousel-image a img {
+    margin: 0;
+    border: none;
+}
+
+.carousel-num {
+    position: absolute;
+    bottom: 6px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.carousel-num i {
+    font-size: 0px;
+    opacity: .85;
+    cursor: pointer;
+    font-style: normal;
+    background-color: #fff;
+    color: #fff;
+    font-size: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 0 0 10px;
+    display: inline-block;
+    border: 1px solid #fff;
+    background-clip: padding-box;
+}
+
+.carousel-num i.current {
+    background-color: #36bc9b;
+}

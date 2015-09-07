@@ -1,0 +1,849 @@
+body {
+    font-family: "Microsoft YaHei";
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-appearance: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/****************************** index.html(鲜客蓝莓首页) *****************************************/
+
+.index {
+    margin: 0 auto;
+    max-width: 640px;
+    min-width: 320px;
+    min-height: 504px;
+    width: 100%;
+    height: auto;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.index img {
+    display: block;
+}
+
+.index-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.index-header .index-nav {
+    height: 44px;
+    background-color: #36bc9b;
+}
+
+.index-header .index-nav div, .index-header .index-nav a {
+    float: left;
+    height: 44px;
+    line-height: 47px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.index-header .index-nav .index-back {
+    width: 20%;
+    padding: 0 0 0 10px;
+}
+
+.index-header .index-nav .index-title {
+    width: 60%;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    top: -2px;
+}
+
+.index-header .index-nav .index-search {
+    width: 20%;
+    text-align: right;
+    padding: 0 10px 0 0;
+}
+
+.index-header .carousel-indicators {
+    bottom: 0;
+}
+
+.index-header .carousel-indicators li {
+    background-color: #fff;
+    border: none;
+    margin: 1px 3px;
+}
+
+.index-header .carousel-indicators li.active {
+    background-color: #36bc9b;
+}
+
+.index-header h2 {
+    font-size: 14px;
+    height: 18px;
+    line-height: 18px;
+    margin: 10px 0 0;
+}
+
+.index-header h2 em {
+    width: 3px;
+    height: 18px;
+    background-color: #36bc9b;
+    vertical-align: middle;
+}
+
+.index-header h2 span {
+    vertical-align: middle;
+    padding: 0 0 0 5px;
+    letter-spacing: 1px;
+}
+
+.index-body {
+    padding: 8px;
+    position: fixed;
+}
+
+.index-body .box {
+    height: 186px;
+    overflow-y: auto;
+    margin: 8px 0 0;
+    padding: 0 0 50px;
+}
+
+.index-body .box .item {
+    float: left;
+    margin: 0 0 8px 2%;
+    width: 32%;
+    border: #e8e8e8 1px solid;
+    background-color: #fff;
+}
+
+.index-body .box .item:nth-child(3n+1) {
+    margin: 0 0 8px;
+}
+
+.index-body .box .item p {
+    border-top: #e8e8e8 1px solid;
+    padding: 8px 5px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.index-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #f7f7f7;
+    border-top: #d8d8d8 1px solid;
+}
+
+.index-footer a {
+    display: block;
+}
+
+.index-footer .home {
+    float: left;
+    width: 40%;
+}
+
+.index-footer .home a.on {
+    background-image: url(../img/home_on.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 37px;
+    margin: 6px auto 0;
+}
+
+.index-footer .home a.off {
+    background-image: url(../img/home_off.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 37px;
+    margin: 6px auto 0;
+}
+
+.index-footer .code {
+    float: left;
+    width: 20%;
+    position: relative;
+}
+
+.index-footer .code em {
+    background-image: url(../img/circle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 47px;
+    height: 10px;
+    margin: auto;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.index-footer .code a {
+    background-image: url(../img/code.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -5px;
+    margin: 0 auto;
+    z-index: 100;
+}
+
+.index-footer .compass {
+    float: right;
+    width: 40%;
+}
+
+.index-footer .compass a.on {
+    background-image: url(../img/compass_on.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 38px;
+    margin: 5px auto 0;
+}
+
+.index-footer .compass a.off {
+    background-image: url(../img/compass_off.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 38px;
+    margin: 5px auto 0;
+}
+
+/****************************** search.html(搜索) *****************************************/
+.search-header {
+    height: 44px;
+    border-bottom: #e8e8e8 1px solid;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.search-header div, .search-header a {
+    float: left;
+    height: 44px;
+    line-height: 47px;
+}
+
+.search-header .search-back {
+    width: 13%;
+    padding: 0 0 0 10px;
+    color: #333;
+    font-size: 20px;
+}
+
+.search-header .search-group {
+    width: 72%;
+    text-align: center;
+    border: #eaeaea 1px solid;
+    border-radius: 25px;
+    height: 34px;
+    line-height: 34px;
+    margin: 5px auto 0;
+}
+
+.search-header .search-group label {
+    color: #999;
+    font-size: 14px;
+}
+
+.search-header .search-group input {
+    border: none;
+    height: 26px;
+    line-height: 26px;
+    margin: 3px 0;
+    padding: 0 5px;
+    width: 82%;
+    font-size: 14px;
+}
+
+.search-header .search-btn {
+    width: 15%;
+    text-align: right;
+    padding: 0 10px 0 0;
+    color: #999;
+    font-size: 14px;
+}
+
+.search-body {
+    padding: 10px 8px;
+    background-color: #fff;
+    position: relative;
+    top: 44px;
+}
+
+.search-body ul li {
+    margin: 10px 0 0;
+}
+
+.search-body ul li a {
+    display: block;
+    border-bottom: #e8e8e8 1px solid;
+    padding: 0 0 5px;
+}
+
+.search-body ul li a img {
+    float: left;
+    width: 14%;
+}
+
+.search-body ul li a p {
+    float: right;
+    width: 82%;
+    color: #333;
+    margin: 4% 0 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/****************************** shops.html(食品详情) *****************************************/
+.shops-header {
+    height: 44px;
+    background-color: #36bc9b;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.shops-header .shops-back {
+    float: left;
+    width: 15%;
+    padding: 0 0 0 10px;
+    color: #fff;
+    font-size: 20px;
+    height: 44px;
+    line-height: 44px;
+}
+
+.shops-header .shops-group {
+    float: left;
+    width: 72%;
+    text-align: center;
+    border: #fff 1px solid;
+    border-radius: 8px;
+    height: 34px;
+    margin: 5px auto 0;
+}
+
+.shops-header .shops-group a {
+    float: left;
+    width: 50%;
+    background-color: #36bc9b;
+    color: #fff;
+    border-radius: 0 8px 8px 0;
+    height: 32px;
+    line-height: 32px;
+}
+
+.shops-header .shops-group a.active {
+    background-color: #fff;
+    color: #36bc9b;
+    border-radius: 6px 0 0 6px;
+}
+
+.shops-body {
+    padding: 10px 8px 0;
+    background-color: #fff;
+    border-bottom: #e8e8e8 1px solid;
+    position: relative;
+    top: 44px;
+}
+
+.shops-body h2 {
+    font-size: 14px;
+    height: 18px;
+    line-height: 18px;
+    margin: 0 -8px;
+}
+
+.shops-body h2 em {
+    width: 3px;
+    height: 18px;
+    background-color: #36bc9b;
+    vertical-align: middle;
+}
+
+.shops-body h2 span {
+    vertical-align: middle;
+    padding: 0 0 0 5px;
+    letter-spacing: 1px;
+}
+
+.shops-body ul li {
+    padding: 10px 0;
+    border-top: #e8e8e8 1px solid;
+}
+
+.shops-body ul li.shops-detail {
+    text-align: justify;
+    line-height: 1.7;
+    color: #666;
+}
+
+.shops-body ul li img {
+    float: left;
+    width: 15%;
+    border: #e8e8e8 1px solid;
+}
+
+.shops-body ul li .shops-info {
+    float: right;
+    width: 81%;
+}
+
+.shops-body .shops-info .title {
+    font-size: 14px;
+}
+
+.shops-footer {
+    margin: 10px 0 0;
+    padding: 10px 0 0;
+    background-color: #fff;
+    border-top: #e8e8e8 1px solid;
+    border-bottom: #e8e8e8 1px solid;
+}
+
+.shops-footer h2 {
+    font-size: 14px;
+    height: 18px;
+    line-height: 18px;
+    font-weight: normal;
+}
+
+.shops-footer h2 em {
+    width: 3px;
+    height: 18px;
+    background-color: #36bc9b;
+    vertical-align: middle;
+}
+
+.shops-footer h2 span {
+    vertical-align: middle;
+    padding: 0 0 0 5px;
+    letter-spacing: 1px;
+}
+
+.shops-footer h2 span label {
+    font-size: 12px;
+}
+
+.shops-footer .percent {
+    padding: 20px 0;
+}
+
+.shops-footer .percent {
+    padding: 20px 0;
+}
+
+.shops-footer .percent .item {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.shops-footer .percent .color1 {
+    color: #36bc9b;
+}
+
+.shops-footer .percent .color2 {
+    color: #ff9502;
+}
+
+.shops-footer .percent .color3 {
+    color: #007cfe;
+}
+
+.shops-footer .percent .color4 {
+    color: #ff3c30;
+}
+
+.shops-footer .percent .color5 {
+    color: #5757d6;
+}
+
+/****************************** result.html(检测结果) *****************************************/
+.result-header {
+    height: 44px;
+    background-color: #36bc9b;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.result-header .result-back {
+    float: left;
+    width: 15%;
+    padding: 0 0 0 10px;
+    color: #fff;
+    font-size: 20px;
+    height: 44px;
+    line-height: 44px;
+}
+
+.result-header .result-group {
+    float: left;
+    width: 72%;
+    text-align: center;
+    border: #fff 1px solid;
+    border-radius: 8px;
+    height: 34px;
+    margin: 5px auto 0;
+}
+
+.result-header .result-group a {
+    float: left;
+    width: 50%;
+    background-color: #36bc9b;
+    color: #fff;
+    border-radius: 8px 0 0 8px;
+    height: 32px;
+    line-height: 32px;
+}
+
+.result-header .result-group a.active {
+    background-color: #fff;
+    color: #36bc9b;
+    border-radius: 0 6px 6px 0;
+}
+
+.result-nav {
+    background-color: #fff;
+    border-bottom: #e8e8e8 1px solid;
+    height: 44px;
+    position: fixed;
+    width: 100%;
+    top: 44px;
+    left: 0;
+    z-index: 2;
+}
+
+.result-nav ul li {
+    float: left;
+    width: 32%;
+    margin: 0 2% 0 0;
+    text-align: center;
+    line-height: 44px;
+}
+
+.result-nav ul li:last-child {
+    margin: 0;
+}
+
+.result-nav ul li a {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    height: 44px;
+    font-size: 14px;
+}
+
+.result-nav ul li.active a {
+    border-bottom: #36bc9b 2px solid;
+    color: #36bc9b;
+}
+
+.result-body {
+    border-top: #e8e8e8 1px solid;
+    background-color: #fff;
+    position: relative;
+    top: 98px;
+}
+
+.result-body .title {
+    padding: 10px 8px;
+}
+
+.result-body .title p {
+    color: #666;
+}
+
+.result-body .result-table table {
+    width: 100%;
+}
+
+.result-body .result-body-02, .result-body .result-body-03 {
+    display: none;
+}
+
+.result-table table tr th {
+    background-color: #d7f2eb;
+    color: #36bc9b;
+    font-size: 13px;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.result-table table tr td {
+    padding: 8px 0;
+    text-align: center;
+}
+
+.result-table table tr:nth-child(2n+1) td {
+    background-color: #f7f7f7;
+}
+
+/****************************** code.html(二维码/条形码) *****************************************/
+.code-header {
+    background-color: #36bc9b;
+    height: 44px;
+    line-height: 44px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+}
+
+.code-body-bg {
+    background-color: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 44px;
+    left: 0;
+}
+
+.code-body {
+    color: #fff;
+    position: relative;
+    z-index: 9;
+    top: 44px;
+}
+
+
+/****************************** manual.html(输入条码) *****************************************/
+.manual-header {
+    height: 44px;
+    background-color: #36bc9b;
+}
+
+.manual-header .manual-back {
+    width: 15%;
+    padding: 0 0 0 10px;
+    color: #fff;
+    font-size: 20px;
+    float: left;
+    height: 44px;
+    line-height: 47px;
+}
+
+.manual-header .manual-txt {
+    float: left;
+    height: 44px;
+    line-height: 47px;
+    font-size: 18px;
+    width: 72%;
+    color: #fff;
+    text-align: center;
+}
+
+.manual-body {
+    border-bottom: #e8e8e8 1px solid;
+    background-color: #fff;
+    padding: 20px 8px;
+}
+
+.manual-body .manual-group {
+    float: left;
+    width: 78%;
+    text-align: center;
+    border: #eaeaea 1px solid;
+    border-radius: 25px;
+    height: 34px;
+    line-height: 34px;
+}
+
+.manual-body .manual-group input {
+    border: none;
+    height: 26px;
+    line-height: 26px;
+    margin: 3px 0;
+    padding: 0 5px;
+    width: 90%;
+    font-size: 14px;
+}
+
+.manual-body .manual-btn {
+    float: right;
+    width: 18%;
+    color: #999;
+    font-size: 14px;
+    background-color: #36bc9b;
+    border-radius: 25px;
+    color: #fff;
+    text-align: center;
+    height: 34px;
+    line-height: 34px;
+}
+
+.manual-tocode {
+    display: block;
+    width: 46.875%;
+    margin: 20px auto 0;
+}
+
+
+/****************************** compass.html(输入条码) *****************************************/
+.compass-header {
+    background-color: #36bc9b;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.compass-body {
+    padding: 10px 8px;
+    background-color: #fff;
+    border-bottom: #e8e8e8 1px solid;
+    position: relative;
+    top: 44px;
+}
+
+.compass-body h2 {
+    font-size: 14px;
+    height: 18px;
+    line-height: 18px;
+    margin: 0 -8px;
+}
+
+.compass-body h2 em {
+    width: 3px;
+    height: 18px;
+    background-color: #36bc9b;
+    vertical-align: middle;
+}
+
+.compass-body h2 span {
+    vertical-align: middle;
+    padding: 0 0 0 5px;
+    letter-spacing: 1px;
+}
+
+.compass-body .content {
+    padding: 5px 0;
+}
+
+.compass-body .content p {
+    padding: 5px 0;
+    text-align: justify;
+    line-height: 1.8;
+    text-indent: 2em;
+}
+
+
+/****************************** search.html(搜索) *****************************************/
+.list-header {
+    height: 44px;
+    background-color: #36bc9b;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+.list-header div, .list-header a {
+    float: left;
+    height: 44px;
+    line-height: 47px;
+    font-size: 18px;
+}
+
+.list-header .list-back {
+    width: 13%;
+    padding: 0 0 0 10px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.list-header .list-txt {
+    width: 72%;
+    text-align: center;
+    position: relative;
+    top: -2px;
+}
+
+.list-body {
+    padding: 10px 8px;
+    background-color: #fff;
+    position: relative;
+    top: 44px;
+}
+
+.list-body ul li {
+    margin: 10px 0 0;
+}
+
+.list-body ul li a {
+    display: block;
+    border-bottom: #e8e8e8 1px solid;
+    padding: 0 0 5px;
+}
+
+.list-body ul li a img {
+    float: left;
+    width: 14%;
+}
+
+.list-body ul li a p {
+    float: right;
+    width: 82%;
+    color: #333;
+    margin: 4% 0 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+
+/****************************** 媒体查询 *****************************************/
+@media screen and (min-width: 360px) {
+
+}
+
+@media screen and (min-width: 414px) {
+
+}
+
+@media screen and (min-width: 480px) {
+
+}
+
+@media screen and (min-width: 640px) {
+
+}

@@ -1,0 +1,165 @@
+body {
+    font-family: "Microsoft YaHei";
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-appearance: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/****************************** index.html(荣威) *****************************************/
+
+.roewe {
+    margin: 0 auto;
+    max-width: 640px;
+    min-width: 320px;
+    min-height: 504px;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.roewe img {
+    display: block;
+}
+
+.roewe .bottom {
+    position: fixed;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+    z-index: 99999;
+}
+
+.roewe .bottom a {
+    display: block;
+    color: #e2e9eb;
+    border: #e2e9eb 1px solid;
+    border-radius: 25px;
+    color: #e2e9eb;
+    padding: 10px 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.roewe .bottom a.link1 {
+    width: 50%;
+    font-size: 16px;
+    margin: 0 auto 30px;
+}
+
+.roewe .bottom .links {
+    text-align: center;
+}
+
+.roewe .bottom .links .fl {
+    width: 50%;
+}
+
+.roewe .bottom a.link2, .roewe .bottom a.link3 {
+    width: 80%;
+}
+
+/****************************** sign.html(荣威报名页面) *****************************************/
+.sign {
+    background-color: #c6eaf3;
+}
+
+.sign .sign-body {
+    text-align: center;
+    padding: 0 0 30px;
+}
+
+.sign .sign-ipt, .sign .sign-a {
+    background-color: #e1f5fa;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    border-radius: 25px;
+    border: none;
+    font-size: 14px;
+    width: 85%;
+    margin: 10px auto;
+    display: block;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.sign .submit {
+    background-color: #e1f5fa;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 25px;
+    border: none;
+    font-size: 18px;
+    width: 85%;
+    display: block;
+    letter-spacing: 2px;
+    margin: 30px auto 0;
+}
+
+.sign .sign-a .caret {
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 8px dashed;
+    display: inline-block;
+    height: 0;
+    margin-left: 4px;
+    vertical-align: middle;
+    width: 0;
+    position: absolute;
+    top: 40%;
+    right: 20px;
+    color: #666;
+}
+
+.sign .sign-a select {
+    background: none;
+    border: none;
+    width: 100%;
+    color: #666;
+    text-align: center;
+    position: relative;
+    left: 20px;
+}
+
+
+/****************************** dealers.html(经销商页面) *****************************************/
+.dealers {
+    background-color: #c6eaf3;
+}
+
+.dealers .dealers-body {
+    padding: 0 20px 10px;
+}
+
+.dealers .dealers-body .items {
+    margin: 0 0 20px;
+}
+
+.dealers .dealers-body dl {
+    float: left;
+    width: 62%;
+}
+
+.dealers .dealers-body img {
+    float: right;
+    width: 30%;
+}
+
+.dealers .dealers-body dl dt {
+    line-height: 1.8;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.dealers .dealers-body dl dd {
+    line-height: 1.8;
+}
+
+
+
+
+
